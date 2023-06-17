@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karan Mahato</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon_io/site.webmanifest">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .dark {
+      background-color: #272727;
+      color: #888888;
+    }
+  </style>
+</head>
+<body class="text-gray-600 font-nuni">
+  <div class="grid md:grid-cols-4"><!-- container -->
+    <div class="navbar md:col-span-1 md:flex md:justify-end text-right">
+      <nav class="">
+        <div class="flex justify-between items-center w-full h-auto">
+          <div class="flex py-2 w-full md:justify-center px-2"><a href="#about"><img class="rounded-full w-12 h-12 object-cover" src="img/avatar.JPG" alt="profile avatar"></a></div>
+          <div class="px-2 cursor-pointer md:hidden" id="burger">
+            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg> 
+          </div>
+        </div>
+        <ul class="mt-6 hidden md:block md:w-36" id="menu">
+          
+          <li class="py-1">
+            <a href="#about" class="px-2 flex justify-end hover:border-r-4 hover:border-primary hover:font-bold">
+              <span>About</span>
+              <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg> 
+            </a>
+          </li>
+
+          <li class="py-1">
+            <a href="#projects" class="px-2 flex justify-end hover:border-r-4 hover:border-primary hover:text-gray-700 hover:font-bold">
+            <span>Projects</span>
+            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+            </svg>            
+            </a>
+          </li>
+
+          <li class="py-1">
+            <a href="#contact" class="px-2 flex justify-end hover:border-r-4 hover:border-primary hover:font-bold">
+              <span>Contact</span>
+              <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+              </svg>              
+            </a>
+          </li>
+
+          <li class="py-1">
+            <a href="#" class="px-2 flex justify-end hover:border-r-4 hover:border-primary hover:font-bold">
+              <span>Resume</span>
+              <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+              </svg>
+              
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div><!-- end nav -->
+
+    <main class="px-16 py-6 bg-gray-100 md:col-span-3">
+      <div class="flex justify-center md:justify-end">
+        <div href="#" class="border w-6 text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-150"></div>
+        <div href="#" class="border w-6 text-primary ml-2 border-secondary-200 md:border-2 hover:bg-primary hover:text-white transition ease-out duration-150"></div>
+        <div href="#" class="border w-6 text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-150"></div>
+        <div href="#" class="border w-6 text-primary ml-2 border-secondary-200 md:border-2 hover:bg-primary hover:text-white transition ease-out duration-150"></div>
+      </div>
+
+      <header id="about">
+        <h2 class="text-6xl text-gray-700 font-semibold">Karan Mahato</h2>
+        <h3 class="text-sm font-semibold mt-2">Hi, there 👋 !</h3>
+        <h3 class="text-sm font-semibold mt-2">I'm Karan, a Computer Science student pursuing my bachelor's degree. With a deep interest in web development, I have been actively involved in web application projects, leveraging my skills in Python, Django, and JavaScript. Moreover, I have a strong command of Linux administration, automation, and security practices.</h3>
+      </header>
+      <div>
+        <h4 class="text-sm pb-2 mt-12 border-b border-gray-200">While I do not possess direct experience working within an organization or company, I have undertaken several independent projects that have allowed me to improve my skills and expand my knowledge.
+        </h4>
+        <div id="projects" class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center grid-auto-rows">
+          <!-- cards begin -->
+
+          <a href="https://github.com/karanmahato44/sms">
+            <div class="card hover:shadow-lg transition duration-150">
+              <img src="img/sms.jpeg" alt="student management site" class="w-full h-32 sm:h-48 object-cover">
+              <div class="m-4 text-center">
+                <span class="text-bold block">Student Management System</span>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">python</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">django</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">js</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">html</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">css</button>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/karanmahato44/django-blog">
+            <div class="card hover:shadow-lg transition duration-150">
+              <img src="img/django-blog.jpeg" alt="multi user django blog" class="w-full h-32 sm:h-48 object-cover">
+              <div class="m-4 text-center">
+                <span class="text-bold block">Multi User Django Blog</span>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">python</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">django</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">bootstrap</button>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/karanmahato44/vidly">
+            <div class="card hover:shadow-lg transition duration-150">
+              <img src="img/dontflix.jpeg" alt="dl site w/ restful api" class="w-full h-32 sm:h-48 object-cover">
+              <div class="m-4 text-center">
+                <span class="text-bold block">Download Site With A RESTful API</span>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">django</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">tastypie</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">tailwindcss</button>
+              </div>
+            </div>
+        </a>
+
+          <a href="https://github.com/karanmahato44/youtube-clone">
+            <div class="card hover:shadow-lg transition duration-150">
+              <img src="img/yt-clone.jpeg" alt="curry" class="w-full h-32 sm:h-48 object-cover">
+              <div class="m-4 text-center">
+                <span class="text-bold block">YouTube Clone</span>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">html</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">css</button>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/karanmahato44/rock-paper-scissors">
+            <div class="card hover:shadow-lg transition duration-150">
+              <img src="img/rps.jpeg" alt="rock paper scissors game" class="w-full h-32 sm:h-48 object-cover">
+              <div class="m-4 text-center">
+                <span class="text-bold block">Rock Paper Scissors Game</span>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">javascript</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">html</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">tailwindcss</button>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="https://github.com/karanmahato44/SocketChat">
+            <div class="card hover:shadow-lg transition duration-150">
+              <img src="img/java-sc.png" alt="socket chat" class="w-full h-32 sm:h-48 object-cover">
+              <div class="m-4 text-center">
+                <span class="text-bold block">SocketChat</span>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">java</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">socket programming</button>
+              </div>
+            </div>
+          </a>
+          
+          <a href="https://github.com/karanmahato44/amazon-clone">
+            <div class="card hover:shadow-lg transition duration-150">
+              <img src="img/amazon-clone.jpeg" alt="socket chat" class="w-full h-32 sm:h-48 object-cover">
+              <div class="m-4 text-center">
+                <span class="text-bold block">Amazon Clone Shopping Site (WIP)</span>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">javascript</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">html</button>
+                <button class="text-secondary-100 px-2 rounded-full bg-primary text-sm">tailwindcss</button>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <h4 id="contact" class="font-bold mt-12 pb-2 border-b border-gray-200 text-center">Contact</h4>
+        <div class="mt-8 flex justify-center items-center">
+          <a class="cursor-pointer" href="https://github.com/karanmahato44"><div class="px-2 text-center items-center"><svg class="inline mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><span>GitHub</span></div></a>
+          <a class="cursor-pointer" href="https://www.linkedin.com/in/karan-mahato-2803a3270/"><div class="px-2 text-center items-center"><svg class="inline mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg><span>LinkedIn</span></div></a>
+          <a class="cursor-pointer" href="mailto:44karanmahato@gmail.com"><div class="px-2 text-center items-center"><svg class="inline mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg><span>Email</span></div></a>
+          <a class="cursor-pointer" href="tel:+9779847076590"><div class="px-2 text-center items-center"><svg class="inline mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg><span>Phone</span></div></a>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="dark-btn btn mt-8 bg-primary text-secondary-100 hover:bg-secondary-200 hover:text-secondary-100 active:opacity-75 transition duration-300">go dark(WIP!)</div>
+        </div>
+      </div>
+    </main>
+  </div><!-- end container -->
+  <script src="index.js"></script>
+</body>
+</html>
